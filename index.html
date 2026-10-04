@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Mr. BBQ — Магия мясного дела | Бургеры Бишкек</title>
+  <meta name="description" content="Mr.BBQ — сеть халал фастфуда в Кыргызстане. 100% мясо, готовим за 4–7 минут. 17 филиалов в Бишкеке, Оше, Караколе и других городах.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800;900&family=Pacifico&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23FFC90E'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23E21B23' font-family='cursive' font-weight='bold'>M</text></svg>">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <a class="header__logo" href="#top" aria-label="Mr. BBQ — на главную">
+      <span class="header__logo-script">Mr. BBQ</span>
+    </a>
+
+    <nav class="header__nav" aria-label="Основная навигация">
+      <a href="#menu" class="header__link" data-i18n="nav.menu">Меню</a>
+      <a href="#branches" class="header__link" data-i18n="nav.branches">Филиалы</a>
+      <a href="#about" class="header__link" data-i18n="nav.about">О нас</a>
+      <a href="#contacts" class="header__link" data-i18n="nav.contacts">Контакты</a>
+    </nav>
+
+    <div class="header__right">
+      <div class="lang-toggle" role="group" aria-label="Language / Язык">
+        <button class="lang-toggle__btn is-active" data-lang="ru" aria-pressed="true">RU</button>
+        <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Мобильное меню -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu__nav">
+      <a href="#menu" class="mobile-menu__link" data-i18n="nav.menu">Меню</a>
+      <a href="#branches" class="mobile-menu__link" data-i18n="nav.branches">Филиалы</a>
+      <a href="#about" class="mobile-menu__link" data-i18n="nav.about">О нас</a>
+      <a href="#contacts" class="mobile-menu__link" data-i18n="nav.contacts">Контакты</a>
+    </nav>
+    <a class="mobile-menu__inst" href="https://www.instagram.com/mr.bbq.kg/" target="_blank" rel="noopener">@mr.bbq.kg</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__cell hero__cell--text">
+          <p class="hero__tag reveal" data-i18n="hero.tag">Халал фастфуд · Кыргызстан</p>
+          <h1 class="hero__title">
+            <span class="reveal" data-i18n="hero.t1">Магия</span>
+            <span class="reveal hero__title-accent" data-i18n="hero.t2">мясного</span>
+            <span class="reveal" data-i18n="hero.t3">дела</span>
+          </h1>
+          <p class="hero__sub reveal" data-i18n="hero.sub">100% мясо. Готовим на огне за 4–7 минут. Вкусно, доступно, безопасно.</p>
+          <div class="hero__cta reveal">
+            <a href="#menu" class="btn btn--red" data-i18n="hero.cta1">Смотреть меню</a>
+            <a href="#branches" class="btn btn--ghost" data-i18n="hero.cta2">Найти филиал</a>
+          </div>
+        </div>
+        <div class="hero__cell hero__cell--img">
+          <div class="hero__img-wrap" id="heroParallax">
+            <img src="assets/img/hero-burger.png" alt="Фирменный красный бургер Mr. BBQ" class="hero__img" data-depth="26">
+            <span class="hero__stamp" data-depth="14" aria-hidden="true">
+              <span data-i18n="hero.stamp">100%<br>мясо</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track" id="marqueeTrack">
+          <span class="marquee__item" data-i18n="marquee">Вкусно ✦ Доступно ✦ Безопасно ✦ 100% халал ✦ На огне ✦&nbsp;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats">
+      <div class="stats__grid">
+        <div class="stat reveal">
+          <span class="stat__num" data-count="17">0</span>
+          <span class="stat__label" data-i18n="stats.branches">филиалов</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="5">0</span>
+          <span class="stat__label" data-i18n="stats.cities">городов</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num"><span data-count="100">0</span>%</span>
+          <span class="stat__label" data-i18n="stats.meat">мясо и халал</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num">4–7</span>
+          <span class="stat__label" data-i18n="stats.minutes">минут — и готово</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="menu" id="menu">
+      <header class="section-head section-head--light">
+        <h2 class="section-title reveal" data-i18n="menu.title">Меню</h2>
+        <p class="section-sub reveal" data-i18n="menu.sub">Главные хиты. Полное меню — в филиалах и в 2ГИС.</p>
+      </header>
+
+      <div class="menu__tabs reveal" role="tablist" aria-label="Категории меню">
+        <button class="menu__tab is-active" role="tab" aria-selected="true" data-cat="burgers" data-i18n="menu.cat.burgers">Бургеры</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-cat="snacks" data-i18n="menu.cat.snacks">Закуски</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-cat="combo" data-i18n="menu.cat.combo">Комбо</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-cat="sides" data-i18n="menu.cat.sides">Гарниры и напитки</button>
+      </div>
+
+      <div class="menu__panels">
+
+        <div class="menu__panel is-active" data-panel="burgers" role="tabpanel">
+          <div class="menu__feature">
+            <img src="assets/img/menu-burger-dark.jpg" alt="Двойной чизбургер на гриле" loading="lazy">
+            <div class="menu__feature-tag" data-i18n="menu.hit">Хит продаж</div>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.b1">Мистер Брискет</span><span class="menu__item-desc" data-i18n="m.b1d">брискет 12 ч в смокере, чеддер, дымный BBQ-соус</span></div><span class="menu__item-price">479<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.b2">Двойной чизбургер</span><span class="menu__item-desc" data-i18n="m.b2d">две котлеты, двойной чеддер, фирменный соус</span></div><span class="menu__item-price">479<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.b3">Рэд бургер</span><span class="menu__item-desc" data-i18n="m.b3d">говядина, чеддер, шрирача — с огоньком</span></div><span class="menu__item-price">394<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.b4">Мистер Биг</span><span class="menu__item-desc" data-i18n="m.b4d">говяжья котлета, чеддер, цезарь и бургер-соус</span></div><span class="menu__item-price">359<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.b5">Мистер Чикен</span><span class="menu__item-desc" data-i18n="m.b5d">сочная куриная котлета, сливочная булочка</span></div><span class="menu__item-price">309<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.b6">Мистер Гамбургер</span><span class="menu__item-desc" data-i18n="m.b6d">классика в мини-булочке бриошь</span></div><span class="menu__item-price">274<i>с</i></span></li>
+          </ul>
+        </div>
+
+        <div class="menu__panel" data-panel="snacks" role="tabpanel">
+          <div class="menu__feature">
+            <img src="assets/img/menu-strips.jpg" alt="Стрипсы Mr. BBQ в фирменной коробке" loading="lazy">
+            <div class="menu__feature-tag" data-i18n="menu.crunchy">Хрустящее</div>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.s1">Крылышки · 6 шт</span><span class="menu__item-desc" data-i18n="m.s1d">обжарены до золотистой корочки</span></div><span class="menu__item-price">454<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.s2">Стрипсы · 5 шт</span><span class="menu__item-desc" data-i18n="m.s2d">куриное филе в хрустящей панировке</span></div><span class="menu__item-price">399<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.s3">Королевские креветки · 6 шт</span><span class="menu__item-desc" data-i18n="m.s3d">морской вкус и хрустящая текстура</span></div><span class="menu__item-price">529<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.s4">Наггетсы · 6 шт</span><span class="menu__item-desc" data-i18n="m.s4d">идеальны с фирменными соусами</span></div><span class="menu__item-price">199<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.s5">Чикен ролл</span><span class="menu__item-desc" data-i18n="m.s5d">стрипсы, овощи и соусы в тортилье</span></div><span class="menu__item-price">239<i>с</i></span></li>
+          </ul>
+        </div>
+
+        <div class="menu__panel" data-panel="combo" role="tabpanel">
+          <div class="menu__feature">
+            <img src="assets/img/menu-combo.jpg" alt="Комбо Mr. BBQ на красном подносе" loading="lazy">
+            <div class="menu__feature-tag" data-i18n="menu.comboNote">бургер + фри + напиток</div>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.c1">Комбо Мистер Брискет</span></div><span class="menu__item-price">699<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.c2">Комбо Двойной чизбургер</span></div><span class="menu__item-price">699<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.c3">Комбо Рэд бургер</span></div><span class="menu__item-price">619<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.c4">Комбо Мистер Чикен</span></div><span class="menu__item-price">539<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.c5">Комбо Мистер Гамбургер</span></div><span class="menu__item-price">499<i>с</i></span></li>
+          </ul>
+        </div>
+
+        <div class="menu__panel" data-panel="sides" role="tabpanel">
+          <div class="menu__feature">
+            <img src="assets/img/menu-fries.jpg" alt="Картофель по-деревенски в красной упаковке Mr. BBQ" loading="lazy">
+            <div class="menu__feature-tag" data-i18n="menu.sidesNote">к любому бургеру</div>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.g1">Картофель фри</span><span class="menu__item-desc" data-i18n="m.g1d">хрустящий снаружи, мягкий внутри</span></div><span class="menu__item-price">129<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.g2">Картофель по-деревенски</span><span class="menu__item-desc" data-i18n="m.g2d">с ароматными специями</span></div><span class="menu__item-price">189<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.g3">Фирменные соусы</span><span class="menu__item-desc" data-i18n="m.g3d">барбекю, сырный, чесночный, горчичный, томатный</span></div><span class="menu__item-price">45<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.g4">Напитки 400 мл</span><span class="menu__item-desc" data-i18n="m.g4d">Coca-Cola, Fanta, Sprite, Fuse Tea, морс</span></div><span class="menu__item-price">89<i>с</i></span></li>
+            <li class="menu__item reveal"><div class="menu__item-info"><span class="menu__item-name" data-i18n="m.g5">Донат ягодный</span><span class="menu__item-desc" data-i18n="m.g5d">воздушный, с ягодной начинкой</span></div><span class="menu__item-price">214<i>с</i></span></li>
+          </ul>
+        </div>
+
+      </div>
+      <p class="menu__note" data-i18n="menu.note">Цены актуальны для филиалов Бишкека и могут отличаться в разных городах.</p>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="about__grid">
+        <div class="about__img reveal">
+          <img src="assets/img/about-hand.jpg" alt="Бургер Mr. BBQ на фоне неоновой вывески" loading="lazy">
+        </div>
+        <div class="about__text">
+          <h2 class="section-title reveal" data-i18n="about.title">Сеть с душой</h2>
+          <p class="reveal" data-i18n="about.p1">Mr.BBQ — кыргызстанская сеть халал-фастфуда. За два года выросли до 17 филиалов в пяти городах: Бишкек, Ош, Каракол, Кызыл-Кия и Манас.</p>
+          <p class="reveal" data-i18n="about.p2">Готовим только из 100% мяса, на открытом огне — и подаём за 4–7 минут. Три простых принципа: вкусно, доступно, безопасно.</p>
+          <ul class="about__tags reveal">
+            <li data-i18n="about.tag1">100% халал</li>
+            <li data-i18n="about.tag2">На огне</li>
+            <li data-i18n="about.tag3">4–7 минут</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BRANCHES ============ -->
+    <section class="branches" id="branches">
+      <header class="section-head">
+        <h2 class="section-title reveal" data-i18n="branches.title">Филиалы</h2>
+        <p class="section-sub reveal" data-i18n="branches.sub">17 точек по Кыргызстану. Нажми на филиал — откроется карта 2ГИС.</p>
+      </header>
+
+      <div class="branches__grid">
+        <a class="branch-card reveal" href="https://2gis.kg/bishkek/firm/70000001101018234" target="_blank" rel="noopener">
+          <span class="branch-card__city" data-i18n="br.bishkek">Бишкек</span>
+          <span class="branch-card__name" data-i18n="br.1">Проспект Чуй, 217</span>
+          <span class="branch-card__meta"><span class="branch-card__hours" data-i18n="br.247">24/7</span><span class="branch-card__go">2ГИС →</span></span>
+        </a>
+        <a class="branch-card reveal" href="https://2gis.kg/bishkek/firm/70000001115738811" target="_blank" rel="noopener">
+          <span class="branch-card__city" data-i18n="br.bishkek">Бишкек</span>
+          <span class="branch-card__name" data-i18n="br.2">Исы Ахунбаева, 100</span>
+          <span class="branch-card__meta"><span class="branch-card__hours" data-i18n="br.247">24/7</span><span class="branch-card__go">2ГИС →</span></span>
+        </a>
+        <a class="branch-card reveal" href="https://2gis.kg/bishkek/firm/70000001088092964" target="_blank" rel="noopener">
+          <span class="branch-card__city" data-i18n="br.bishkek">Бишкек</span>
+          <span class="branch-card__name" data-i18n="br.3">Bishkek Park · Киевская, 148</span>
+          <span class="branch-card__meta"><span class="branch-card__hours">10:00–22:00</span><span class="branch-card__go">2ГИС →</span></span>
+        </a>
+        <a class="branch-card reveal" href="https://2gis.kg/bishkek/firm/70000001104648883" target="_blank" rel="noopener">
+          <span class="branch-card__city" data-i18n="br.bishkek">Бишкек</span>
+          <span class="branch-card__name" data-i18n="br.4">ТРК DJAl · Джал-23, 1/3</span>
+          <span class="branch-card__meta"><span class="branch-card__hours" data-i18n="br.247">24/7</span><span class="branch-card__go">2ГИС →</span></span>
+        </a>
+        <a class="branch-card reveal" href="https://2gis.kg/bishkek/firm/70000001096830567" target="_blank" rel="noopener">
+          <span class="branch-card__city" data-i18n="br.bishkek">Бишкек</span>
+          <span class="branch-card__name" data-i18n="br.5">Asia Mall · Айтматова, 3 этаж</span>
+          <span class="branch-card__meta"><span class="branch-card__hours">10:00–22:00</span><span class="branch-card__go">2ГИС →</span></span>
+        </a>
+        <a class="branch-card reveal" href="https://2gis.kg/bishkek/search/Mr.%20BBQ%20%D0%AE%D0%BD%D1%83%D1%81%D0%B0%D0%BB%D0%B8%D0%B5%D0%B2%D0%B0%20185" target="_blank" rel="noopener">
+          <span class="branch-card__city" data-i18n="br.bishkek">Бишкек</span>
+          <span class="branch-card__name" data-i18n="br.6">ТЦ Marks · Юнусалиева, 185/1</span>
+          <span class="branch-card__meta"><span class="branch-card__hours">10:00–22:00</span><span class="branch-card__go">2ГИС →</span></span>
+        </a>
+      </div>
+
+      <div class="branches__all reveal">
+        <a class="btn btn--black" href="https://2gis.kg/bishkek/branches/70000001088092963" target="_blank" rel="noopener" data-i18n="branches.all">Все 17 филиалов в 2ГИС</a>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery" aria-label="Атмосфера">
+      <figure class="gallery__item gallery__item--tall reveal">
+        <img src="assets/img/interior-1.jpg" alt="Фуд-корт Mr. BBQ с жёлтой неоновой вывеской" loading="lazy">
+      </figure>
+      <figure class="gallery__item reveal">
+        <img src="assets/img/menu-combo.jpg" alt="Поднос с бургерами и фри Mr. BBQ" loading="lazy">
+      </figure>
+      <figure class="gallery__item reveal">
+        <img src="assets/img/interior-2.jpg" alt="Неоновая вывеска Mr. BBQ" loading="lazy">
+      </figure>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contacts">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">Mr. BBQ</span>
+        <p class="footer__slogan" data-i18n="footer.slogan">Магия мясного дела</p>
+      </div>
+      <div class="footer__col">
+        <span class="footer__head" data-i18n="footer.contacts">Контакты</span>
+        <a href="tel:+996500508705" class="footer__link">+996 500 50 87 05</a>
+        <a href="https://www.instagram.com/mr.bbq.kg/" target="_blank" rel="noopener" class="footer__link">Instagram — @mr.bbq.kg</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__head" data-i18n="footer.cities">Города</span>
+        <span class="footer__text" data-i18n="footer.citiesList">Бишкек · Ош · Каракол · Кызыл-Кия · Манас</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> Mr.BBQ</span>
+      <span data-i18n="footer.made">Вкусно · Доступно · Безопасно</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
